@@ -1,1 +1,4 @@
 .DS_store
+/OpenFloodIt/nbproject/private/
+/OpenFloodIt/dist/
+/OpenFloodIt/build/

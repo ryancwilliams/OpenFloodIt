@@ -16,11 +16,16 @@ import java.awt.Color;
  */
 public class PlayerGame implements Game {
     private Grid grid;
+    private int width;
+    private int height;
+    private CellType[] cellTypes;
     public PlayerGame() {
         this(16,16);
     }
     public PlayerGame(int width, int height) {
-        CellType[] cellTypes = genCellTypes();
+        this.width = width;
+        this.height = height;
+        cellTypes = genCellTypes();
         this.grid = new Grid(width, height, new Pseudorandom(), cellTypes);
     }
     @Override
@@ -30,7 +35,7 @@ public class PlayerGame implements Game {
 
     @Override
     public void newGame() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        this.grid = new Grid(width, height, new Pseudorandom(), cellTypes);
     }
 
     private CellType[] genCellTypes() {

@@ -28,11 +28,11 @@ public class Grid {
     }
     /**
      * Gets the cell type for the address.
-     * @param x the Row
-     * @param y the Column
+     * @param Column the Column
+     * @param Row the Row
      * @return  the CellType for that cell
      */
-    public CellType getCell(int x, int y) {
-        return grid[x][y];
+    public CellType getCell(int Column, int Row) {
+        return grid[Column][Row];
     }
 }

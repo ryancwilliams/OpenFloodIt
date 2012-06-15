@@ -48,5 +48,10 @@ public class PlayerGame implements Game {
         // Return the types
         return cellTypes;
     }
+
+    @Override
+    public void castGrid(CellType to) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 }

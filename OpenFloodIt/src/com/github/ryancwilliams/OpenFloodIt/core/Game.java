@@ -18,4 +18,9 @@ public interface Game {
      * Creates a new game.
      */
     public void newGame();
+    /**
+     * Casts the grid to a specific CellType.
+     * @param to the cellType to cast to.
+     */
+    public void castGrid(CellType to);
 }

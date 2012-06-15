@@ -26,7 +26,7 @@ public class GridCellPanel extends JPanel {
         this.grid = grid;
         
         // Set up panel
-        setPreferredSize(new Dimension(10, 10));
+        setPreferredSize(new Dimension(20, 20));
         this.update();
     }
     public final void update() {

@@ -42,7 +42,7 @@ public class GridPanel extends JPanel {
         }
         
         // Setup the panel
-        setPreferredSize(new Dimension(GRID_WIDTH * 10, GRID_HEIGHT * 10));
+        setPreferredSize(new Dimension(GRID_WIDTH * 20, GRID_HEIGHT * 20));
     }
     public void update() {
         // Update the grid

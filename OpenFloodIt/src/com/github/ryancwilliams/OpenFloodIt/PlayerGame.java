@@ -41,8 +41,8 @@ public class PlayerGame implements Game {
         cellTypes[0] = new CellType("Red", Color.RED);
         cellTypes[1] = new CellType("Green", Color.GREEN);
         cellTypes[2] = new CellType("Blue", Color.BLUE);
-        cellTypes[3] = new CellType("Pink", Color.PINK);
-        cellTypes[4] = new CellType("Orange", Color.ORANGE);
+        cellTypes[3] = new CellType("Cyan", Color.CYAN);
+        cellTypes[4] = new CellType("Magenta", Color.MAGENTA);
         cellTypes[5] = new CellType("Yellow", Color.YELLOW);
         
         // Return the types

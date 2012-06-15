@@ -5,7 +5,11 @@
 package com.github.ryancwilliams.OpenFloodIt.gui;
 
 import com.github.ryancwilliams.OpenFloodIt.core.Game;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  *
@@ -13,6 +17,12 @@ import javax.swing.JFrame;
  */
 public class GameWindow {
     public static void createGameWindow(String name,Game game) {
+        try {
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+        } catch (Exception ex) {
+            Logger.getLogger(GameWindow.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+        
         //Create a JFrame
         JFrame frame = new JFrame(name);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

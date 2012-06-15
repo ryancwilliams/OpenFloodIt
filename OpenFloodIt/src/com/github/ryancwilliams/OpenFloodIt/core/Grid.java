@@ -114,17 +114,25 @@ public class Grid {
      * @param to the CellType to convert to.
      */
     private void castAdjCells(int column,int row,CellType from,CellType to) {
-        if(this.grid[(column + 1)][row] == from) {
-            castCell((column + 1),row, to);
+        if(cellValid((column + 1), row)) {
+            if(this.grid[(column + 1)][row] == from) {
+                castCell((column + 1),row, to);
+            }
         }
-        if(this.grid[(column - 1)][row] == from) {
-            castCell((column - 1),row, to);
+        if(cellValid((column - 1), row)) {
+            if(this.grid[(column - 1)][row] == from) {
+                castCell((column - 1),row, to);
+            }
         }
-        if(this.grid[column][(row + 1)] == from) {
-            castCell(column,(row + 1), to);
+        if(cellValid(column, (row + 1))) {
+            if(this.grid[column][(row + 1)] == from) {
+                castCell(column,(row + 1), to);
+            }
         }
-        if(this.grid[column][(row - 1)] == from) {
-            castCell(column,(row - 1), to);
+        if(cellValid(column, (row - 1))) {
+            if(this.grid[column][(row - 1)] == from) {
+                castCell(column,(row - 1), to);
+            }
         }
     }
     /**

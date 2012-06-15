@@ -13,8 +13,10 @@ import javax.swing.JPanel;
  */
 public class GameWindowPanel extends JPanel {
     
-    public GameWindowPanel(Game game) {
+    public GameWindowPanel(Game game) {       
         GridPanel grid = new GridPanel(game.getGrid());
+        
+        add(new CastPanel(grid, game.getGrid()));
         
         add(grid);
     }
